@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    }
+    header .a-header {
+      display: flex; }
+    header .logo-contenedores {
+      max-width: 80%;
+      margin: 0 auto; 
+    }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000 ;
+    align-items: center ;
+   }
+    .navbar a {
+      margin: 5px auto;
+      padding: 0.5rem 0;
+      color: #fafafa;
+      transition: .5s; 
+      text-decoration: none;}
+      .navbar a:hover {
+        color: #656697;
+        transform: scale(1.1); }
+
+  
+  /*MENU HAMBURGUESA*/
+  .bars__menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none; }
+    .bars__menu span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #101820;
+      margin-top: 6px;
+      transition: all 300ms;
+      transform-origin: 0px 100%; }
+  
+  .activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px); }
+  
+  .activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px); }
+  
+  .activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px; }
+  
+  @media (max-width: 600px) {
+    header {
+      justify-content: space-between;
+      align-items: center; }
+    .bars__menu {
+      display: block;
+      margin: 0 20px; }
+    img.logo-contenedores {
+      width: 250px; }
+    .menu__desplegable {
+      display: none;
+      transition: ease-in-out .3s; }
+    .activemenu__desplegable {
+      display: block; } }
+  
+      @media(min-width:600px){
+        .navbar{
+          flex-direction: row;
+          justify-content: center;
+          width: 100%;
+        }
+        .navbar a{
+          margin: 15px;
+          font-size: .9rem;
+          text-decoration: none;
+        }
+      }
+
+      .enlace-activo{
+        color: red;
+      }
+
+
+      .cart{
+        display: flex;
+        gap: 15px;
+        width: 250px;
+        align-items: center;
+      }
+
+      .redes{
+        width: 250px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+      }
+
+      .redes svg{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      .logo{
+        width: 180px;
+      }
+
+      .cart svg{
+        width: 25px;
+        height: 25px;
+      }
+
+      input{
+        width: 150px;
+        border-radius: 3px;
+        position: relative;
+        bottom: 3px;
+      }
+
+      .buscar{
+        background-color: #1f262e;
+        border: none;
+        padding: 2px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(233, 229, 229);
+      }
+      
+      @media(max-width:600px){
+        header{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          row-gap: 25px;
+        }
+        .redes{
+          order: 1;
+        }
+
+        .cart{
+          width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+   
+
+        .cart svg{
+          width: 25px;
+          height: 25px;
+        }
+  
+        input{
+          width: 150px;
+          border-radius: 3px;
+          padding: 3px;
+         
+        }
+  
+        .buscar{
+          background-color: #1f262e ;
+          border: none;
+          padding: 7px 8px;
+          border-radius: 5px;
+          cursor: pointer;
+          color: rgb(233, 229, 229);
+        }
+        p.menu{
+          color: white;
+          text-align: center;
+          height: 100%;
+          align-items: center;
+        }
+        .bars__menu{
+          background-color: #1f262e;
+          width: 100%;
+          margin: 0;
+          padding-top: 5px;
+  
+        }
+      }
+
+      .buscar svg{
+        width: 14px;
+        height: 14px;
+        padding: 2px;
+      }
+
+.hero{
+  background-image: url(../img/iphones.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+
+
+
+.contenido{
+  text-align: center;
+  margin: 0 auto;
+  width: 280px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenido h1{
+  font-size: 1.5rem;
+  color: #1f262e;
+}
+.contenido h2{
+  font-size: 1rem;
+}
+
+@media(min-width:750px){
+  .hero{
+    height: 80.8vh;
+    filter: none;
+  }
+  .contenido{
+    width: 600px;
+    height: 60.8vh;
+  }
+  .contenido h1{
+    font-size: 2.9rem;
+    color: #1f262e;
+  }
+  .contenido h2{
+    font-size: 1.5rem;
+  }
+}
+
+
+      
+
+
+
